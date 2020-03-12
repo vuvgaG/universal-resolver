@@ -25,8 +25,8 @@
     <server>
       <id>github</id>
       <!-- Personal access token with permission: read:packages -->
-      <username> philpotisk </username>
-      <password> 9e2f02749452adb0ad7794f1d4c36ac8ac2958e4 </password>
+      <username>philpotisk</username>
+      <password>bc2c6b5c7d008169a1de705129bcd0834d00419e</password>
     </server>
   </servers>
 </settings>
