@@ -7,7 +7,6 @@ USER root
 
 # build dependencies
 
-COPY ./settings.xml /opt/settings.xml
 RUN mvn org.apache.maven.plugins:maven-dependency-plugin:3.1.1:get -DrepoUrl=https://repo.maven.apache.org/maven2 -Dartifact=org.eclipse.jetty:jetty-maven-plugin:9.4.18.v20190429
 RUN mvn org.apache.maven.plugins:maven-dependency-plugin:3.1.1:get -DrepoUrl=https://repo.maven.apache.org/maven2 -Dartifact=org.apache.maven.plugins:maven-war-plugin:3.2.2
 
@@ -16,12 +15,12 @@ RUN mvn org.apache.maven.plugins:maven-dependency-plugin:3.1.1:get -DrepoUrl=htt
 ADD ./resolver/java/ /opt/uni-resolver-java
 ADD ./config.json /opt/uni-resolver-java/uni-resolver-web/
 
-RUN cd /opt/uni-resolver-java && mvn --settings /opt/settings.xml clean install -N -DskipTests && mvn clean && \
-    cd /opt/uni-resolver-java/uni-resolver-core && mvn --settings /opt/settings.xml clean install -N -DskipTests && mvn clean && \
-    cd /opt/uni-resolver-java/driver && mvn --settings /opt/settings.xml clean install -N -DskipTests && mvn clean && \
-    cd /opt/uni-resolver-java/driver-http && mvn --settings /opt/settings.xml clean install -N -DskipTests && mvn clean && \
-    cd /opt/uni-resolver-java/uni-resolver-local && mvn --settings /opt/settings.xml clean install -N -DskipTests && mvn clean && \
-    cd /opt/uni-resolver-java/uni-resolver-web && mvn --settings /opt/settings.xml clean install package -N -DskipTests
+RUN cd /opt/uni-resolver-java && mvn --settings /opt/uni-resolver-java/settings.xml clean install -N -DskipTests && mvn clean && \
+    cd /opt/uni-resolver-java/uni-resolver-core && mvn --settings /opt/uni-resolver-java/settings.xml clean install -N -DskipTests && mvn clean && \
+    cd /opt/uni-resolver-java/driver && mvn --settings /opt/uni-resolver-java/settings.xml clean install -N -DskipTests && mvn clean && \
+    cd /opt/uni-resolver-java/driver-http && mvn --settings /opt/uni-resolver-java/settings.xml clean install -N -DskipTests && mvn clean && \
+    cd /opt/uni-resolver-java/uni-resolver-local && mvn --settings /opt/uni-resolver-java/settings.xml clean install -N -DskipTests && mvn clean && \
+    cd /opt/uni-resolver-java/uni-resolver-web && mvn --settings /opt/uni-resolver-java/settings.xml clean install package -N -DskipTests
 
 # done
 
