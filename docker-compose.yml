@@ -4,7 +4,7 @@ networks:
     name: universal-resolver
 services:
   driver-did-btcr:
-    image: universalresolver/driver-did-btcr:latest
+    image: universalresolver/driver-did-btcr:0.1.0
     environment:
       uniresolver_driver_did_btcr_bitcoinConnection: ${uniresolver_driver_did_btcr_bitcoinConnection}
       uniresolver_driver_did_btcr_rpcUrlMainnet: ${uniresolver_driver_did_btcr_rpcUrlMainnet}
@@ -12,7 +12,7 @@ services:
     ports:
       - "8081:8080"
   driver-did-sov:
-    image: universalresolver/driver-did-sov:latest
+    image: universalresolver/driver-did-sov:0.1.0
     environment:
       uniresolver_driver_did_sov_libIndyPath: ${uniresolver_driver_did_sov_libIndyPath}
       uniresolver_driver_did_sov_poolConfigs: ${uniresolver_driver_did_sov_poolConfigs}
@@ -25,11 +25,11 @@ services:
     ports:
       - "8083:8081"
   driver-did-stack:
-    image: universalresolver/driver-did-stack:latest
+    image: universalresolver/driver-did-stack:0.1.0
     ports:
       - "8084:8080"
   driver-did-erc725:
-    image: universalresolver/driver-did-erc725:latest
+    image: universalresolver/driver-did-erc725:0.1.0
     environment:
       uniresolver_driver_did_erc725_ethereumConnections: ${uniresolver_driver_did_erc725_ethereumConnections}
       uniresolver_driver_did_erc725_rpcUrls: ${uniresolver_driver_did_erc725_rpcUrls}
@@ -37,7 +37,7 @@ services:
     ports:
       - "8085:8080"
   driver-dns:
-    image: universalresolver/driver-dns:latest
+    image: universalresolver/driver-dns:0.1.0
     environment:
       uniresolver_driver_dns_dnsServers: ${uniresolver_driver_dns_dnsServers}
     ports:
@@ -55,7 +55,7 @@ services:
     ports:
       - "8090:8080"
   driver-did-ccp:
-    image: hello2mao/driver-did-ccp:latest
+    image: hello2mao/driver-did-ccp:0.1.0
     ports:
       - "8091:8080"
   work-did-driver:

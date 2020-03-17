@@ -4,19 +4,19 @@
 			"pattern": "^(did:btcr:.+)$",
 			"image": "universalresolver/driver-did-btcr",
 			"imageProperties": "true",
-			"tag": "latest",
+			"tag": "0.1.0",
 			"testIdentifiers": [ "did:btcr:xz35-jznz-q6mr-7q6", "did:btcr:xkrn-xz7q-q0mx-4cl", "did:btcr:x705-jznz-qwvq-0uw" ]
 		}, {
 			"pattern": "^(did:sov:(?:(?:\\w[-\\w]*(?::\\w[-\\w]*)*):)?(?:[1-9A-HJ-NP-Za-km-z]{21,22}))$",
 			"image": "universalresolver/driver-did-sov",
 			"imageProperties": "true",
-			"tag": "latest",
+			"tag": "0.1.0",
 			"testIdentifiers": [ "did:sov:WRfXPg8dantKVubE3HX8pw" ]
 		}, {
 			"pattern": "^(did:erc725:.+)$",
 			"image": "universalresolver/driver-did-erc725",
 			"imageProperties": "true",
-			"tag": "latest",
+			"tag": "0.1.0",
 			"testIdentifiers": [ "did:erc725:ropsten:2F2B37C890824242Cb9B0FE5614fA2221B79901E" ]
 		}, {
 			"pattern": "^(did:v1:nym:.+)$",
@@ -34,7 +34,7 @@
 			"pattern": "^(did:stack:.+)$",
 			"image": "universalresolver/driver-did-stack",
 			"imageProperties": "true",
-			"tag": "latest",
+			"tag": "0.1.0",
 			"testIdentifiers": [ "did:stack:v0:16EMaNw3pkn3v6f2BgnSSs53zAKH4Q8YJg-0" ]
 		}, {
 			"pattern": "^(did:web:.+)$|^(did:ethr:.+)$|^(did:nacl:.+)$",
@@ -46,7 +46,7 @@
 			"pattern": "^((?:(?:[a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\\-]*[a-zA-Z0-9])\\.)*(?:[A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\\-]*[A-Za-z0-9]))$",
 			"image": "universalresolver/driver-dns",
 			"imageProperties": "true",
-			"tag": "latest",
+			"tag": "0.1.0",
 			"testIdentifiers": [ "ssi.labs.nic.at" ]
 		}, {
 			"pattern": "^(did:jolo:.+)$",
@@ -74,7 +74,7 @@
 		}, {
 			"pattern": "^(did:ccp:.+)$",
 			"image": "hello2mao/driver-did-ccp",
-			"tag": "latest",
+			"tag": "0.1.0",
 			"testIdentifiers": ["did:ccp:ceNobbK6Me9F5zwyE3MKY88QZLw", "did:ccp:3CzQLF3qfFVQ1CjGVzVRZaFXrjAd"]
 		}, {
 			"pattern": "^(did:work:.+)$",
