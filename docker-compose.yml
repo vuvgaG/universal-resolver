@@ -37,7 +37,7 @@ services:
     ports:
       - "8085:8080"
   driver-dns:
-    image: universalresolver/driver-dns:0.1.0
+    image: universalresolver/driver-did-dns:0.1.0
     environment:
       uniresolver_driver_dns_dnsServers: ${uniresolver_driver_dns_dnsServers}
     ports:
@@ -55,7 +55,7 @@ services:
     ports:
       - "8090:8080"
   driver-did-ccp:
-    image: hello2mao/driver-did-ccp:0.1.0
+    image: universalresolver/driver-did-ccp:0.1.0
     ports:
       - "8091:8080"
   work-did-driver:
