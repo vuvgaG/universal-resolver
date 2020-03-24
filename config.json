@@ -78,8 +78,8 @@
 			"testIdentifiers": ["did:ccp:ceNobbK6Me9F5zwyE3MKY88QZLw", "did:ccp:3CzQLF3qfFVQ1CjGVzVRZaFXrjAd"]
 		}, {
 			"pattern": "^(did:work:.+)$",
-			"image": "didwork/work-did-driver",
-			"tag": "latest",
+			"image": "universalresolver/driver-did-work",
+			"tag": "0.1.0",
 			"testIdentifiers" : [ "did:work:2UUHQCd4psvkPLZGnWY33L" ]
 		}, {
 			"pattern": "^(did:ont:.+)$",
