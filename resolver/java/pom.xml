@@ -33,18 +33,32 @@
 		<system>GitHub Issues</system>
 	</issueManagement>
 
-
 	<scm>
 		<url>https://github.com/decentralized-identity/universal-resolver</url>
 		<connection>scm:git:git://github.com/decentralized-identity/universal-resolver.git</connection>
 		<developerConnection>scm:git:git@github.com:decentralized-identity/universal-resolver.git</developerConnection>
 	  <tag>HEAD</tag>
-  </scm>
-	<distributionManagement>
+  	</scm>
+
+	<repositories>
 		<repository>
-			<id>github</id>
-			<name>GitHub decentralized-identity universal-resolver</name>
-			<url>https://maven.pkg.github.com/decentralized-identity/universal-resolver</url>
+			<id>danubtech-maven-snapshots</id>
+			<url>https://repo.danubetech.com/repository/maven-snapshots/</url>
+		</repository>
+		<repository>
+			<id>danubtech-maven-releases</id>
+			<url>https://repo.danubetech.com/repository/maven-releases/</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>danubetech-maven-snapshots</id>
+			<url>https://repo.danubetech.com/repository/maven-snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>danubetech-maven-releases</id>
+			<url>https://repo.danubetech.com/repository/maven-releases/</url>
 		</repository>
 	</distributionManagement>
 
